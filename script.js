@@ -1,26 +1,28 @@
 // Sample Product Data
 const products = [
-    { id: 1, name: "MacBook Pro 14\"", brand: "Apple", category: "Laptops", price: 1999, oldPrice: 2399, rating: 4.8, image: "https://source.unsplash.com/300x220/?macbook,laptop,apple", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=MacBook+Pro", discount: 17 },
-    { id: 2, name: "Dell XPS 13", brand: "Dell", category: "Laptops", price: 1299, oldPrice: 1599, rating: 4.6, image: "https://source.unsplash.com/300x220/?dell,laptop,computer", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=Dell+XPS", discount: 19 },
-    { id: 3, name: "iPhone 15 Pro", brand: "Apple", category: "Phones", price: 1099, oldPrice: 1199, rating: 4.9, image: "https://source.unsplash.com/300x220/?iphone,apple,smartphone", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=iPhone+15", discount: 8 },
-    { id: 4, name: "Samsung Galaxy S24", brand: "Samsung", category: "Phones", price: 899, oldPrice: 999, rating: 4.7, image: "https://source.unsplash.com/300x220/?samsung,phone,mobile", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=Galaxy+S24", discount: 10 },
-    { id: 5, name: "Sony WH-1000XM5", brand: "Sony", category: "Headphones", price: 399, oldPrice: 499, rating: 4.8, image: "https://source.unsplash.com/300x220/?sony,headphones,audio", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=Sony+XM5", discount: 20 },
-    { id: 6, name: "AirPods Pro Max", brand: "Apple", category: "Headphones", price: 549, oldPrice: 649, rating: 4.7, image: "https://source.unsplash.com/300x220/?airpods,headphones,wireless", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=AirPods+Max", discount: 15 },
-    { id: 7, name: "iPad Pro 12.9\"", brand: "Apple", category: "Accessories", price: 1299, oldPrice: 1499, rating: 4.8, image: "https://source.unsplash.com/300x220/?ipad,tablet,apple", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=iPad+Pro", discount: 13 },
-    { id: 8, name: "Samsung Monitor 34\"", brand: "Samsung", category: "Accessories", price: 599, oldPrice: 799, rating: 4.5, image: "https://source.unsplash.com/300x220/?monitor,display,screen", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=Monitor", discount: 25 },
-    { id: 9, name: "ASUS ROG Laptop", brand: "ASUS", category: "Laptops", price: 1899, oldPrice: 2199, rating: 4.7, image: "https://source.unsplash.com/300x220/?asus,gaming,laptop", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=ASUS+ROG", discount: 14 },
-    { id: 10, name: "Google Pixel 8", brand: "Google", category: "Phones", price: 799, oldPrice: 899, rating: 4.6, image: "https://source.unsplash.com/300x220/?google,pixel,phone", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=Pixel+8", discount: 11 },
-    { id: 11, name: "Logitech MX Master", brand: "Logitech", category: "Accessories", price: 99, oldPrice: 129, rating: 4.8, image: "https://source.unsplash.com/300x220/?logitech,mouse,gadget", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=MX+Master", discount: 23 },
-    { id: 12, name: "Beats Studio Pro", brand: "Apple", category: "Headphones", price: 399, oldPrice: 499, rating: 4.6, image: "https://source.unsplash.com/300x220/?beats,headphones,studio", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=Beats+Studio", discount: 20 },
+    // TODO: Add local product images to /assets/images/products/
+    { id: 1, name: "MacBook Pro 14\"", brand: "Apple", category: "Laptops", price: 1999, oldPrice: 2399, rating: 4.8, image: "/assets/images/products/macbook-pro.jpg", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=MacBook+Pro", discount: 17 },
+    { id: 2, name: "Dell XPS 13", brand: "Dell", category: "Laptops", price: 1299, oldPrice: 1599, rating: 4.6, image: "/assets/images/products/dell-xps.jpg", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=Dell+XPS", discount: 19 },
+    { id: 3, name: "iPhone 15 Pro", brand: "Apple", category: "Phones", price: 1099, oldPrice: 1199, rating: 4.9, image: "/assets/images/products/iphone-15.jpg", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=iPhone+15", discount: 8 },
+    { id: 4, name: "Samsung Galaxy S24", brand: "Samsung", category: "Phones", price: 899, oldPrice: 999, rating: 4.7, image: "/assets/images/products/galaxy-s24.jpg", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=Galaxy+S24", discount: 10 },
+    { id: 5, name: "Sony WH-1000XM5", brand: "Sony", category: "Headphones", price: 399, oldPrice: 499, rating: 4.8, image: "/assets/images/products/sony-xm5.jpg", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=Sony+XM5", discount: 20 },
+    { id: 6, name: "AirPods Pro Max", brand: "Apple", category: "Headphones", price: 549, oldPrice: 649, rating: 4.7, image: "/assets/images/products/airpods-max.jpg", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=AirPods+Max", discount: 15 },
+    { id: 7, name: "iPad Pro 12.9\"", brand: "Apple", category: "Accessories", price: 1299, oldPrice: 1499, rating: 4.8, image: "/assets/images/products/ipad-pro.jpg", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=iPad+Pro", discount: 13 },
+    { id: 8, name: "Samsung Monitor 34\"", brand: "Samsung", category: "Accessories", price: 599, oldPrice: 799, rating: 4.5, image: "/assets/images/products/samsung-monitor.jpg", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=Monitor", discount: 25 },
+    { id: 9, name: "ASUS ROG Laptop", brand: "ASUS", category: "Laptops", price: 1899, oldPrice: 2199, rating: 4.7, image: "/assets/images/products/asus-rog.jpg", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=ASUS+ROG", discount: 14 },
+    { id: 10, name: "Google Pixel 8", brand: "Google", category: "Phones", price: 799, oldPrice: 899, rating: 4.6, image: "/assets/images/products/pixel-8.jpg", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=Pixel+8", discount: 11 },
+    { id: 11, name: "Logitech MX Master", brand: "Logitech", category: "Accessories", price: 99, oldPrice: 129, rating: 4.8, image: "/assets/images/products/mx-master.jpg", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=MX+Master", discount: 23 },
+    { id: 12, name: "Beats Studio Pro", brand: "Apple", category: "Headphones", price: 399, oldPrice: 499, rating: 4.6, image: "/assets/images/products/beats-studio.jpg", fallback: "https://via.placeholder.com/300x220/1a1a2e/00ff88?text=Beats+Studio", discount: 20 },
 ];
 
 // Blog Data
+// TODO: Add local blog images to /assets/images/blog/
 const blogPosts = [
     {
         id: 1,
         title: "Best Laptops for 2024",
         excerpt: "Discover the top laptops of 2024 that balance performance, design, and portability.",
-        image: "https://source.unsplash.com/500x300/?laptop,computer,technology",
+        image: "/assets/images/blog/best-laptops.jpg",
         fallback: "https://via.placeholder.com/500x300/1a1a2e/00ff88?text=Best+Laptops",
         date: "Jan 20, 2024",
         category: "Guides"
@@ -29,7 +31,7 @@ const blogPosts = [
         id: 2,
         title: "Wireless Earbuds Comparison",
         excerpt: "Compare the latest wireless earbuds to find the perfect audio companion for your lifestyle.",
-        image: "https://source.unsplash.com/500x300/?earbuds,headphones,audio",
+        image: "/assets/images/blog/earbuds-comparison.jpg",
         fallback: "https://via.placeholder.com/500x300/1a1a2e/00ff88?text=Earbuds",
         date: "Jan 18, 2024",
         category: "Reviews"
@@ -38,7 +40,7 @@ const blogPosts = [
         id: 3,
         title: "5G Phones Worth Your Money",
         excerpt: "Explore the best 5G smartphones that offer incredible speeds and advanced features.",
-        image: "https://source.unsplash.com/500x300/?5g,phone,smartphone",
+        image: "/assets/images/blog/5g-phones.jpg",
         fallback: "https://via.placeholder.com/500x300/1a1a2e/00ff88?text=5G+Phones",
         date: "Jan 15, 2024",
         category: "Tech News"
@@ -47,7 +49,7 @@ const blogPosts = [
         id: 4,
         title: "Gaming Setup Guide 2024",
         excerpt: "Complete guide to building the ultimate gaming setup with the best components.",
-        image: "https://source.unsplash.com/500x300/?gaming,setup,computer",
+        image: "/assets/images/blog/gaming-setup.jpg",
         fallback: "https://via.placeholder.com/500x300/1a1a2e/00ff88?text=Gaming+Setup",
         date: "Jan 12, 2024",
         category: "Guides"
@@ -56,7 +58,7 @@ const blogPosts = [
         id: 5,
         title: "Monitor Features Explained",
         excerpt: "Understand refresh rates, resolution, and panel types for optimal monitor selection.",
-        image: "https://source.unsplash.com/500x300/?monitor,display,screen",
+        image: "/assets/images/blog/monitor-features.jpg",
         fallback: "https://via.placeholder.com/500x300/1a1a2e/00ff88?text=Monitors",
         date: "Jan 10, 2024",
         category: "Educational"
@@ -65,7 +67,7 @@ const blogPosts = [
         id: 6,
         title: "Keyboard Switches Deep Dive",
         excerpt: "Everything you need to know about mechanical keyboard switches and how they differ.",
-        image: "https://source.unsplash.com/500x300/?keyboard,mechanical,switches",
+        image: "/assets/images/blog/keyboard-switches.jpg",
         fallback: "https://via.placeholder.com/500x300/1a1a2e/00ff88?text=Keyboards",
         date: "Jan 8, 2024",
         category: "Guides"
